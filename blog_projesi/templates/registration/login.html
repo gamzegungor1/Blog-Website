@@ -1,0 +1,12 @@
+{% extends  "base.html"%}
+
+{%block content%}
+       
+    <h2> LOG İN </h2>
+    <form method="post">
+        {% csrf_token %}
+        {{form.as_p}}
+        <button type="submit">Giriş</button>
+    </form>     
+
+{%endblock content%}

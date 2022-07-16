@@ -1,0 +1,9 @@
+{%extends "base.html"%}
+
+{%block content%}
+    <h1> Post Silme </h1>
+     <form active="" method="post"> {% csrf_token %}
+        <p> {{post.title}} SİLMEK İSTEDİĞİNDEN EMİN MİSİN? </p>
+        <input type="submit" value="Onayla"/> 
+{%endblock content%}
+         
